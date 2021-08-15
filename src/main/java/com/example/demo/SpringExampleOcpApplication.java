@@ -10,7 +10,7 @@ public class SpringExampleOcpApplication {
 	}
 	@GetMapping("/{input}")
 	public String congrats(@PathVariable String input) {
-		return "Hi " input + " Your application deployed successfully...";
+		return "Hi " + input + " Your application deployed successfully...";
 	}	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringExampleOcpApplication.class, args);
